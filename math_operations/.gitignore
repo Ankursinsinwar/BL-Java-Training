@@ -1,0 +1,37 @@
+# Maven
+target/
+pom.xml.tag
+pom.xml.next
+pom.xml.bak
+pom.xml.versions
+pom.xml.releaseBackup
+# Maven temporary files
+release.properties
+dependency-reduced-pom.xml
+builddirectory/
+# Java class files and archives
+*.class        # Exclude compiled class files
+*.jar          # Exclude packaged JAR files
+*.war          # Exclude packaged WAR files
+*.ear          # Exclude packaged EAR files
+
+# IDE specific files
+.idea/         # Exclude IntelliJ IDEA project files
+*.iml          # Exclude IntelliJ IDEA module files
+*.ipr          # Exclude IntelliJ IDEA project files
+*.iws          # Exclude IntelliJ IDEA workspace files
+.classpath     # Exclude Eclipse .classpath file
+.project       # Exclude Eclipse .project file
+.settings/     # Exclude Eclipse .settings directory
+nbproject/private/ # Exclude NetBeans project files
+build/         # Exclude NetBeans build directory
+nbbuild/       # Exclude NetBeans nbbuild directory
+dist/          # Exclude NetBeans dist directory
+nbdist/        # Exclude NetBeans nbdist directory
+
+# OS and temporary files
+*.log          # Exclude log files
+*.tmp          # Exclude temporary files
+.DS_Store      # Exclude macOS-specific files
+Thumbs.db      # Exclude Windows-specific files
+hs_err_pid*    # Exclude JVM crash logs
