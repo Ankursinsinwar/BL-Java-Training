@@ -16,5 +16,7 @@ public interface OrderServiceI {
     Map<String, List<Order<? extends FoodItem>>> getAllOrders();
 
     public void OrderSlip();
+    
+	public void OrderSlip(User user);
 
 }

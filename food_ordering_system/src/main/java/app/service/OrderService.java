@@ -90,8 +90,30 @@ public class OrderService implements OrderServiceI {
             printUserOrders(userOrders);
         }
     }
+    
+    @Override
+    public void OrderSlip(User user) {
+    	
+    	if (!Validation.isValidEmail(user.getEmail())) {
+            throw new InvalidUserException("Invalid email");
+        }
 
-    private void printUserOrders(List<Order<? extends FoodItem>> orders) {
+        if (!Validation.isValidPhone(user.getPhone())) {
+            throw new InvalidUserException("Invalid phone number");
+        }
+
+        List<Order<? extends FoodItem>> userOrders = orders.get(user.getEmail());
+
+    	if (userOrders == null || userOrders.isEmpty()) {
+    		throw new InvalidOrderException("Order must contain items");
+    	}
+    	
+    	printUserOrders(userOrders);
+    }
+    
+    
+
+    public void printUserOrders(List<Order<? extends FoodItem>> orders) {
 
         User user = orders.get(0).getUser();
 

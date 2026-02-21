@@ -15,7 +15,6 @@ import java.util.Collections;
 
 @DisplayName("Test Cases for Food Ordering System 🍕 ")
 public class OrderServiceTest {
-
     // Add an order
 @DisplayName("Should successfuly add valid user and valid placed order ✅")
 @Test
